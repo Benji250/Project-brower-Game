@@ -2,5 +2,56 @@ body{
     background-color: tan;
 }
 h1{
-   color: rgb(188, 10, 10);
+   color: #004B87;
+text-align: center;
+font-size: 50px;
+padding-bottom: 20px;
+}
+img{
+   max-width: 100%;
+  height: 100px;
+}
+.game{
+    width: 900px;
+    height: 700px;
+    border: 2px solid black;
+    margin: auto;
+}
+.info{
+color: rgb(139, 2, 177);
+font-size: 30px;
+}
+#boy{
+    position: relative;
+    top: 390px;
+
+}
+#enemy{
+    position: relative;
+    top: 350px;
+    left: 800px;
+    animation: block 2.5s infinite;
+}
+#background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.craftpix.net/2023/04/Power-Station-Free-Tileset-Pixel-Art.gif");
+    height: 700px;
+}
+#score{
+    display: flex;
+    border: 3px solid black;
+    width: 155px;
+    
+}
+
+@keyframes block{
+ 0%{
+    left: 800px;
+ }
+ 100%{
+    left: 0px;
+ }
+
+
 }
