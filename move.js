@@ -2,33 +2,40 @@ let runningBoy = 1;
 
 function gameLoop() {
   runningBoy++;
-  document.querySelector('.runningBoy').addClass('hidden');
-document.querySelector('.runningBoy'+runningBoy).removeClass('hidden');
-
-requestAnimationFrame(gameLoop);
-}
-
-gameLoop();
-
-
-
-document.addEventListener('keydown', (event) => {
-    if (event.code === 'Spacebar') gameLoop();
+  if (runningBoy > 8)runningBoy = 1;
+  document.querySelectorAll('.runningBoy').forEach((e) => {
+    e.setAttribute('hidden', '');
   });
-  let jumpingBoy = 1;
+ console.log(runningBoy) 
+ document.querySelector('.runningBoy'+runningBoy).removeAttribute('hidden');
+ setTimeout(() => {
+    gameLoop();
+  }, 100) 
 
-function gameLoop() {
-  runningBoy++;
-  document.querySelector('.jumpingingBoy').addClass('hidden');
-document.querySelector('.jumpingBoy'+jumpingBoy).removeClass('hidden');
+ 
+ }
 
-requestAnimationFrame(gameLoop);
-}
-
-gameLoop();
-
+ gameLoop();
 
 
-document.addEventListener('keydown', (event) => {
-    if (event.code === 'Spacebar') gameLoop();
-  });
+
+// document.addEventListener('keydown', (event) => {
+//     if (event.code === 'Spacebar') gameLoop();
+//   });
+//   let jumpingBoy = 1;
+
+// function gameLoop() {
+//   runningBoy++;
+//   document.querySelector('.jumpingingBoy').addClass('hidden');
+// document.querySelector('.jumpingBoy'+jumpingBoy).removeClass('hidden');
+
+// requestAnimationFrame(gameLoop);
+// }
+
+// gameLoop();
+
+
+
+// document.addEventListener('keydown', (event) => {
+//     if (event.code === 'Spacebar') gameLoop();
+//   });
