@@ -1,3 +1,4 @@
+//Code from Brandon
 let runningBoy = 1;
 
 function gameLoop() {
@@ -5,8 +6,7 @@ function gameLoop() {
   if (runningBoy > 8)runningBoy = 1;
   document.querySelectorAll('.runningBoy').forEach((e) => {
     e.setAttribute('hidden', '');
-  });
- console.log(runningBoy) 
+  }); 
  document.querySelector('.runningBoy'+runningBoy).removeAttribute('hidden');
  setTimeout(() => {
     gameLoop();

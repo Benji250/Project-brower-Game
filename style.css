@@ -18,7 +18,7 @@ img{
     margin: auto;
 }
 .info{
-color: rgb(2, 157, 177);
+color:  #004B87;
 font-size: 30px;
 }
 #boy{
@@ -29,7 +29,7 @@ font-size: 30px;
     position: relative;
     top: 360px;
     left: 800px;
-    animation: block 1s linear infinite;
+    animation: block 100000s linear infinite;
 }
 #background{
     background-repeat: no-repeat;
@@ -39,17 +39,23 @@ font-size: 30px;
 }
 #score{
     text-align: center;
-    border: 3px solid black;
-    width: 150px;
-    height: 20px;
-    font-size: 20px;
+    border: 3px dotted black;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
 }
 .jump{
     animation: jump 4s ease-in-out;
 }
 #scoreFont{
     font-size: 25px;
-    color: rgb(177, 127, 2)
+    color: rgb(34, 2, 177)
+
+}
+#restButton{
+text-align: center;
+
+
 
 }
 
