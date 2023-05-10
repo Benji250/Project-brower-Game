@@ -29,7 +29,7 @@ font-size: 30px;
     position: relative;
     top: 360px;
     left: 800px;
-    animation: block 100000s linear infinite;
+    animation: block 1.5s linear infinite;
 }
 #background{
     background-repeat: no-repeat;
