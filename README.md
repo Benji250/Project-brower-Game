@@ -1,41 +1,27 @@
 ## Deployment
 
-The web game is deployed at <YOUR DEPLOYED GITHUB.IO URL GOES HERE>.
+The web game is deployed at https://benji250.github.io/project-browser-game/.
 
 
 ## Project Description
 
-_(Replace this text with a brief description of your game and what inspired you to make it.)_
+This game is a jumping game where the boy jumps over a lot of saws. One thing that inspired me to make this game was the dinosaur game and how simple it looks but I soon found out how hard it is to make for a beginner.  
 
 
 ## Game Logic
 
 ```
-XXX IMPORTANT! Replace all of this text with your own writing as you do these tasks/answer these questions THEN DELETE THIS LINE XXX
+One of the choice that the player has is how far they want or can go this game might be a little difficult at first but once you get the hang of it, it gets easier.
+One way to lose this game is if you fail to get 50 points before you die.
 
-The writing should describe in plain, simple language the logic of the game.
-Describe the logic involved in player decisions.
-  - What are the choices available to the player?
-  - What happens when the player makes a choice?
-Describe the logic that evaluates the player's victory/loss/progress status.
-```
 
-## Deliverables
-
->Even if you have a great big idea for a game, it's important to scope this project according to what you can get done in the next two weeks. We'll refer to your project completion goal using the term **[Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product) (MVP)** -- a list of the criteria needed to "ship" a playable version of your game that meets the project requirements.
->
->*Don't lose sight of your big ideas, though! Keep a list of further improvements you can refer to as **Post-MVP Ideas**. You might finish some before our project time is done, or you might work on them later!*
->
-> For your README, delete this blockquote and fill in the lists below.
 
 
 ### MVP Criteria
 
 XXX IMPORTANT! Replace the text below as you list the MVP criteria you met AND THEN DELETE THIS LINE XXX
+One thing my game has to do to meet minimum standard is be able to play and not have so many issues and also have a score and  highscore working, one last thing that I want in my game is animations. 
 
-- One thing my game must do to meet my minimum standard.
-- Another thing.
-- Etc.
 
 
 ### Post-MVP Plans
@@ -55,4 +41,4 @@ Images from https://www.gameart2d.com/red-hat-boy-free-sprites.html
 
 background image from https://craftpix.net/freebies/power-station-free-tileset-pixel-art/
 
-Contributors: Brandon Martin
+Contributors: Brandon Martin, Chris Di

@@ -3,11 +3,13 @@ const enemy = document.getElementById("enemy");
 const score = document.getElementById("score");
 
 let currentScore = 0;
+let highScore = 0;
+
 
 const jumpSound = new Audio('./images/character movements/Arrow+Swoosh+1.mp3')
-jumpSound.volume=1;
+jumpSound.volume=0.5;
 const deathSound = new Audio('./images/character movements/Dart.mp3')
-deathSound.volume=1;
+deathSound.volume=0.5;
 const guySound = new Audio('./images/character movements/SCREAM3.mp3')
 guySound.volume=0.5;
 
@@ -29,12 +31,17 @@ let alive = setInterval(function(){
     let enemyLeft = parseInt(
         window.getComputedStyle(enemy).getPropertyValue("left")
         );
-        
+        // currentScore++
+        // score.innerText = currentScore
         if (enemyLeft < 12){
            currentScore++
-           score.innerText = currentScore
+            score.innerText = currentScore
     
-        }
+         }
+         if (score > highScore){
+            highScore = score;
+            document.querySelector(".highScore").textContent = highScore;
+         }
     
     if (enemyLeft < 50 && enemyLeft > 0 && boyTop >= 390){
        currentScore = 0 
@@ -44,12 +51,16 @@ let alive = setInterval(function(){
        alert("YOU DIED !!");
        
     }
+//     highScore++
+// score.innerText = highScore
+// if (score > highScore) highScore = score;
+// highScoreFont.innerText = highscore
 }, 10);
+
 
 document.addEventListener("keydown", function(event){
     jump()
     jumpSound.play()
-    jumpBoy()
     console.log("jump")
 });
 //Code from Chris D

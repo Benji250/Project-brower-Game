@@ -17,19 +17,23 @@ function gameLoop() {
 
  gameLoop();
 
-let deadBoy = 1;
 
-function jumpLoop() {
-jumpBoy++;
-if (jumpBoy > 12)jumpBoy = 1;
-  document.querySelectorAll('.jumpBoy').forEach((e) => {
-    e.setAttribute('hidden', '');
-  }); 
- document.querySelector('.jumpBoy'+jumpBoy).removeAttribute('hidden');
- setTimeout(() => {
-    jumpLoop();
-  }, 100) 
-}
+
+// }
+//let jumpBoy = 1
+
+// function jumpLoop() {
+// jumpBoy++;
+// if (jumpBoy > 12)jumpBoy = 1;
+//   document.querySelectorAll('.jumpBoy').forEach((e) => {
+//     e.setAttribute('hidden', '');
+//   }); 
+//  document.querySelector('.jumpBoy'+jumpBoy).removeAttribute('hidden');
+//  setTimeout(() => {
+//     jumpLoop();
+//   }, 100) 
+// }
+
 
 // document.addEventListener('keydown', (event) => {
 //     if (event.code === 'Spacebar') gameLoop();
