@@ -38,10 +38,15 @@ let alive = setInterval(function(){
             score.innerText = currentScore
     
          }
-         if (score > highScore){
-            highScore = score;
-            document.querySelector(".highScore").textContent = highScore;
-         }
+        //  if (score > highScore){
+        //     highScore++
+        //     highScoreFont.innerText = highScore
+            // highScore = score;
+            // document.querySelector(".highScore").textContent = highScore;
+         //}
+        // if (currenScore === 50){
+        //     alert("Good job you won !!")
+        // }
     
     if (enemyLeft < 50 && enemyLeft > 0 && boyTop >= 390){
        currentScore = 0 
