@@ -49,11 +49,14 @@ let alive = setInterval(function(){
         // }
     
     if (enemyLeft < 50 && enemyLeft > 0 && boyTop >= 390){
-       currentScore = 0 
+       //currentScore = 0 
        resetScore(currentScore)
        guySound.play()
        deathSound.play() 
-       alert("YOU DIED !!");
+       alert("YOU DIED !!")
+       block.style.animation = "none"
+       block.style.display = "none";
+      
        
     }
 //     highScore++
